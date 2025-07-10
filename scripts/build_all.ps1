@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Slums" `
+  -ModName "Slums" `
+  -ModFolder "Slums" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/slums/Slums-Original.zip" `
+  -ModBaseFilesUrlHash "6eef333ef5577a30759d46f4ba7471d0ff710a6e1ed91b3694dfae5e6fdb81e2" `
+  -ModReadmePath "Readme (Eng).txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
